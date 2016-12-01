@@ -35,7 +35,16 @@ app.module(sarinaexpress);
 // Defining model
 app.factory("Sample",["sarina.express"],function(express){
     // now you have express in your service
+    var app=express();
 });
+
+// or you can use app
+app.factory("Sample",["sarina.express.app"],function(expressapp){
+    // now you have express in your service
+    var expressapp.listen(3000,function(){
+        // ...
+    })
+}); 
 
 // finally we need to start app
 app.start();
