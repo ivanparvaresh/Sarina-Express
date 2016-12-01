@@ -1,0 +1,31 @@
+{
+  "name": "sarina.express",
+  "version": "1.0.5",
+  "description": "Sarina Express plugin",
+  "main": "express.js",
+  "keywords": [
+      "node",
+      "web",
+      "express",
+      "sarina"
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "sarina":"^1.0.1",
+    "express":"^4.14.0"
+  },
+  "devDependencies": {
+    "gulp":"~3.9.1",
+    "gulp-mocha":"~2.2.0",
+    "chai":"~3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javadparvaresh/Sarina-Express.git"
+  },
+  "author": "javadparvaresh@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/javadparvaresh/Sarina-Express/"
+}
