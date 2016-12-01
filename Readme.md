@@ -13,7 +13,7 @@ Sarina.Express has build on top of [Express](http://expressjs.com/).
 
 Several quick start options are available:
 - Clone the repo: `git clone https://github.com/javadparvaresh/Sarina-Express.git`
-- Install with [npm](https://www.npmjs.com): `npm install sarinaexpress`
+- Install with [npm](https://www.npmjs.com): `npm install sarina.express`
 
 
 ## Bugs and feature requests
