@@ -14,7 +14,7 @@ module.exports = function (sarina) {
         return {
             start:function(port){
                 return new Promise(function(resolve,reject){
-                    app.listen(80,function(){
+                    app.listen(port,function(){
                         resolve();
                     }).on("error",function(err){
                         reject(err);
