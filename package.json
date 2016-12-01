@@ -1,6 +1,6 @@
 {
   "name": "sarina.express",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Sarina Express plugin",
   "main": "express.js",
   "keywords": [
