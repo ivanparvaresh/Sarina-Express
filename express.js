@@ -1,5 +1,4 @@
 var express = require("express");
-var pug=require("pug");
 
 module.exports = function (sarina) {
 
