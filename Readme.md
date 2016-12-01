@@ -28,22 +28,26 @@ var sarinaexpress=require("sarinaexpress");
 
 // create a sarina app by passing configuration
 var app=sarina.create({});
-
-// add to modules
 app.module(sarinaexpress);
 
-// Defining model
+// you can access express library by this service
 app.factory("Sample",["sarina.express"],function(express){
     // now you have express in your service
     var app=express();
 });
 
-// or you can use app
+// or you can access express app by this service
 app.factory("Sample",["sarina.express.app"],function(expressapp){
-    // now you have express in your service
-    var expressapp.listen(3000,function(){
-        // ...
-    })
+    
+});
+
+// start server easily by using server service
+app.exec("run",["sarina.express.server"],function(server){
+    return {
+        run:function(resolve,reject){
+            server.start(3000).then(resolve).catch(reject);
+        }
+    }
 }); 
 
 // finally we need to start app
